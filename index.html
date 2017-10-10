@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Week 4 Game - Crystals </title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="allContent">
+		<h1>Crystals Collector!</h1>
+		<div class="instructBox">
+			<p>You will be given a random number at the start of the game.</p>
+			<br>
+			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+			<br>
+			<p>You win the game by matching your total score to the random number. You lose if your total score goes above the random number.</p>
+			<br>
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+			<br>
+			<p>Each time the game starts the value of each crystal will change.</p>
+		</div>
+		<div class="clearfix">
+			<div class="targetContainer">Your Target Number:<p id="targetNumber"></p></div>
+			<div class="winLossBox">
+				<div>Wins:<p id="wins"></p></div>
+				<div>Losses:<p id="losses"></p></div>
+			</div>
+		</div>
+		<div id="crystals" class="clearfix">
+			<div id="crystal1"><img src="assets/images/blandCrystal.jpg" alt=""></div>
+			<div id="crystal2"><img src="assets/images/mostBoringCrystal.jpg" alt=""></div>
+			<div id="crystal3"><img src="assets/images/multiColorCrystal.jpg" alt=""></div>
+			<div id="crystal4"><img src="assets/images/purpleCrystal.jpg" alt=""></div>
+		</div>
+		<div class="counterBox">Your Current Number:<p id="counter">0</p></div>
+
+	</div>
+
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <script src="assets/javascript/game.js"></script>
+	
+</body>
+</html>
